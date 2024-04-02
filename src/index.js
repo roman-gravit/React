@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CounterButton from './03_state/Lesson';
+import { Counter, Lesson, Button } from './05_props/Lesson';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <CounterButton />
+    <Lesson child={<Button />}><Counter /></Lesson>
 );
