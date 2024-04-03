@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./07_conditional_render/Lesson";
+import { StrictMode } from 'react';
+import App from "./08_lists/Lesson";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <StrictMode>
+        <App />
+    </StrictMode>
+
 );
