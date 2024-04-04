@@ -1,4 +1,3 @@
-'use client';
 
 import React, { Component, Fragment, createRef } from "react";
 
