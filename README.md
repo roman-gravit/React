@@ -1,3 +1,38 @@
+## React
+
+### 1. Life circle of the component
+
+  - Mounting:  **Add** component to DOM
+
+  - Updateing:  **Change** of the state of the component(via setState)or change of the prop
+
+  - Unmounting: **Delete** component from DOM
+
+
+- constructor
+
+- getDriveStateFromProps
+
+- getSnapshotBeforeUpdate: before component update. You get PREVIOUS copies of the this.props and this.state
+
+- shouldComponentUpdate: can do optimiztion here. You get FUTURE copies of the this.props and this.state.
+						 You can decide do NOT update the component - render() will not be called.
+
+- componentDidUpdate:  called each time after component was updated. You get PREVIOUS copies 
+	                   of the this.props and this.state
+
+- componentDidMount:  is the perfect place, where we can call the setState() method to change the state of our 
+                      application and render() the updated data loaded JSX.
+
+- componentWillUnmount: called just before deleting from DOM. Do all cleaning stuff here.
+
+
+- componentWillUnmount(deprecated)
+
+- componentWillUpdate(deprecated)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
