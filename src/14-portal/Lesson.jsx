@@ -1,5 +1,5 @@
 import React,  { Component } from 'react';
-import ReactDOM from "react-dom";
+import { createPortal } from "react-dom";
 
 export class MyPortal extends Component {
 	el = document.createElement("div");
@@ -13,7 +13,7 @@ export class MyPortal extends Component {
 	}
 
 	render() {
-		return ReactDOM.createPortal(this.props.children, this.el);
+		return createPortal(this.props.children, this.el);
 	}
 }
 

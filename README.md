@@ -31,6 +31,21 @@
 
 - componentWillUpdate(deprecated)
 
+### 2. What is React Portal
+
+React Portals are a powerful feature in React that allows you to render components outside the current React tree hierarchy. 
+
+Typically, when you render a component in React, it gets inserted into the DOM as a child of its parent component. 
+
+However, there are scenarios where you might need to render a component at a different location in the DOM, such as when 
+creating a modal or dropdown menu or tooltip.
+
+  ```
+  import {createPortal} from 'react-dom';
+  createPortal(children, domNode);
+  
+  ```
+
 
 
 # Getting Started with Create React App
